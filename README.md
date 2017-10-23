@@ -32,3 +32,6 @@ You can configure `mermaid.js` URL on `Administration -> Plugins` page.
 Default value is UNPKG CDN.
 https://unpkg.com/mermaid/dist/mermaid.min.js
 
+## License
+
+[MIT](LICENSE)
