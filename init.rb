@@ -4,7 +4,7 @@ Redmine::Plugin.register :redmine_mermaid_macro do
   name 'Redmine Mermaid Macro plugin'
   author 'Taiki IKEGAME'
   description 'Add mermaid graphs to your wiki.'
-  version '0.0.1'
+  version '1.0.0'
   url 'https://github.com/taikii/redmine_mermaid_macro'
   author_url 'https://taikii.github.io'
 
@@ -21,8 +21,10 @@ Redmine::Plugin.register :redmine_mermaid_macro do
          "    C-->D;\n" +
          "}}"
     macro :mermaid do |obj, args, text|
+      divid = "mermaid_" + SecureRandom.urlsafe_base64(8)
       out = ''.html_safe
-      out << content_tag('div', text, :class => 'mermaid')
+      out << content_tag(:div, text, id: divid, class: 'mermaid')
+      out << javascript_tag("if (typeof mermaidInitialized != 'undefined') {mermaid.init(undefined, $('#" + divid + "'));};")
       out
     end
   end
