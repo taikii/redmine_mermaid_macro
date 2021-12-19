@@ -1,6 +1,8 @@
 # Redmine Mermaid Macro Plugin
 
-This plugin adds a `mermaid` graph macro to wiki formated fields. 
+> [RedMica UI Extension](https://github.com/redmica/redmica_ui_extension) is a more functional plugin.
+
+This plugin adds a `mermaid` graph macro to wiki formated fields.
 
 About mermaid: https://mermaidjs.github.io
 
