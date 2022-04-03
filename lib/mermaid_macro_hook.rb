@@ -1,4 +1,4 @@
-class MermaidMacroHookListener < Redmine::Hook::ViewListener
+class MermaidMacroHook < Redmine::Hook::ViewListener
   include ActionView::Helpers::TagHelper
   include ActionView::Helpers::JavaScriptHelper
 
