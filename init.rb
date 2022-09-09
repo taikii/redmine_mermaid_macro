@@ -4,7 +4,7 @@ Redmine::Plugin.register :redmine_mermaid_macro do
   name 'Redmine Mermaid Macro plugin'
   author 'Taiki IKEGAME'
   description 'Add mermaid graphs to your wiki.'
-  version '1.0.1'
+  version '1.0.2'
   url 'https://github.com/taikii/redmine_mermaid_macro'
   author_url 'https://taikii.github.io'
 
