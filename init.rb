@@ -1,3 +1,5 @@
+require File.expand_path('lib/mermaid_macro_hook', __dir__)
+
 Redmine::Plugin.register :redmine_mermaid_macro do
   name 'Redmine Mermaid Macro plugin'
   author 'Taiki IKEGAME'
