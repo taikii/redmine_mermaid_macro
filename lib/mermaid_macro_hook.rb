@@ -9,11 +9,6 @@ class MermaidMacroHook < Redmine::Hook::ViewListener
   end
 
   def view_layouts_base_html_head(context={})
-    # js = ""
-    # js << "import mermaid from '#{Setting.plugin_redmine_mermaid_macro['mermaid_url']}';"
-    # js << "mermaid.initialize({startOnLoad:true});"
-    # return javascript_tag(js, type: 'module').html_safe
-    
     js = ""
     js << "{"
     js << "\"imports\": {"
