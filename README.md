@@ -4,7 +4,7 @@
 
 This plugin adds a `mermaid` graph macro to wiki formated fields.
 
-About mermaid: https://mermaidjs.github.io
+About mermaid: https://mermaid.js.org/
 
 ## Example
 
@@ -24,7 +24,11 @@ graph TD;
 
 1. Clone or copy files into the Redmine plugins directory
    ```
-   git clone https://github.com/taikii/redmine_mermaid_macro.git plugins/redmine_mermaid_macro
+   // < v10
+   git clone -b mermaid9 https://github.com/taikii/redmine_mermaid_macro.git plugins/redmine_mermaid_macro
+
+   // >= v10
+   git clone -b mermaid10 https://github.com/taikii/redmine_mermaid_macro.git plugins/redmine_mermaid_macro
    ```
 2. Restart Redmine
 
