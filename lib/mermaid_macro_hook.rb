@@ -10,12 +10,15 @@ class MermaidMacroHook < Redmine::Hook::ViewListener
 
   def view_layouts_base_html_head(context={})
     js = ""
+    js << "<script type=\"importmap\">"
     js << "{"
     js << "\"imports\": {"
     js << "\"mermaid\": \"#{Setting.plugin_redmine_mermaid_macro['mermaid_url']}\""
     js << "}"
     js << "}"
-    return javascript_tag(js, type: 'importmap').html_safe
+    js << "</script>\n"
+    return js
+    # return javascript_tag(js, type: 'importmap').html_safe
   end
 
 end
