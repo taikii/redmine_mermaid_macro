@@ -35,8 +35,8 @@ graph TD;
 ## Configration
 
 You can configure `mermaid.js` URL on `Administration -> Plugins` page.
-Default value is UNPKG CDN.
-https://unpkg.com/mermaid/dist/mermaid.min.js
+Default value is jsDelivr CDN.
+https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs
 
 ## License
 
